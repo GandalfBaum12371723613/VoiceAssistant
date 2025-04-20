@@ -4,3 +4,4 @@ __pycache__/
 log/
 realtimesst.log
 HOMEASSISTANT_TOKEN
+OPENWEATHER_API_KEY

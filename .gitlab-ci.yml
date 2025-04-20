@@ -1,0 +1,14 @@
+push_to_github:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache git openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan github.com >> ~/.ssh/known_hosts
+  script:
+    - git config --global user.name "Carl Johann Stempel"
+    - git config --global user.email "carljohann@robotik.ag"
+    - git remote add github git@github.com:GandalfBaum12371723613/VoiceAssistant.git
+    - git push github main

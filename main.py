@@ -39,7 +39,8 @@ def heating_off():
 
 def get_weather():
     try:
-        key = "70aecda64f9e9faedc48a3a4723d8ecb"
+        with open("OPENWEATHER_API_KEY", "r") as file:
+            key = file.read().strip()
         city_name = "Ardcost"
         state_code = "Kerry"
         country_code = "IE"
