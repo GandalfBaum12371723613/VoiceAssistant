@@ -16,4 +16,4 @@ push_to_github:
     - git config --global user.name "Carl Johann Stempel"
     - git config --global user.email "carljohann@robotik.ag"
     - git remote add github git@github.com:GandalfBaum12371723613/VoiceAssistant.git
-    - git push github HEAD:main
+    - git push github HEAD:refs/heads/main
