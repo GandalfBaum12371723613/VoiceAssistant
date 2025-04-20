@@ -8,9 +8,9 @@ Contributions are welcome and greatly appreciated! Whether you want to add new f
 
 ### How to Contribute
 
-1. **Report Bugs**: If you encounter any issues, please open a bug report in the [Issues](https://github.com/your-repo/issues) section of the repository. Include as much detail as possible, such as steps to reproduce the issue, error messages, and your environment setup.
+1. **Report Bugs**: If you encounter any issues, please open a bug report in the [Issues](https://github.com/GandalfBaum12371723613/VoiceAssistant/issues) section of the repository. Include as much detail as possible, such as steps to reproduce the issue, error messages, and your environment setup.
 
-2. **Suggest Features**: Have an idea for a new feature? Open a feature request in the [Issues](https://github.com/your-repo/issues) section and describe your idea in detail.
+2. **Suggest Features**: Have an idea for a new feature? Open a feature request in the [Issues](https://github.com/GandalfBaum12371723613/VoiceAssistant/issues) section and describe your idea in detail.
 
 3. **Submit Pull Requests**: If you'd like to contribute code:
    - Fork the repository.
@@ -18,7 +18,7 @@ Contributions are welcome and greatly appreciated! Whether you want to add new f
    - Make your changes and ensure they are well-tested.
    - Submit a pull request with a clear description of your changes.
 
-4. **Provide Feedback**: Share your thoughts on the project, suggest improvements, or discuss ideas in the [Discussions](https://github.com/your-repo/discussions) section.
+4. **Provide Feedback**: Share your thoughts on the project, suggest improvements, or discuss ideas in the [Discussions](https://github.com/GandalfBaum12371723613/VoiceAssistant/discussions) section.
 
 ### Guidelines
 
@@ -28,10 +28,6 @@ Contributions are welcome and greatly appreciated! Whether you want to add new f
 - Ensure your changes do not break existing functionality.
 
 ### Getting Started
-
-If you're new to the project, check out the [README](README.md) for setup instructions and an overview of the features. Feel free to reach out if you have any questions or need help getting started.
-
-Thank you for contributing to the Voice Assistant project!
 
 ## Features
 
@@ -64,24 +60,24 @@ Thank you for contributing to the Voice Assistant project!
 
 3. **Home Assistant Token**: If you plan on using functions like ```heating_on()``` you have to get a long-lived-access-token to your homeassistant and save it in a file called ```HOMEASSISTANT_TOKEN```.
 
-4. **Open weather map API key**: If you plan on using ```get_weather()``` you have to get a api key from [https://openweathermap.org/api](https://openweathermap.org/api) and save it in a file called ```OPENWEATHER_API_KEY```.
+4. **Open weather map API key**: If you plan on using ```get_weather()``` you have to get an API key from [https://openweathermap.org/api](https://openweathermap.org/api) and save it in a file called ```OPENWEATHER_API_KEY```.
 
-5. **Dependencies**: Install the python dependencies using 
+5. **Dependencies**: Install the Python dependencies using:
     ```bash
     pip install -r dependencies.txt
     ```
-    You also have to install ```espeak-ng``` and ```ollama``` using
-    ```
+    You also have to install ```espeak-ng``` and ```ollama``` using:
+    ```bash
     sudo pacman -S espeak-ng ollama
     ```
-    or your distributions package manager.
+    or your distribution’s package manager.
 
-    Now run 
-    ```
+    Now run:
+    ```bash
     ollama run llama3.1
     ```
     and
-    ```
+    ```bash
     ollama run mistral
     ```
     to download the needed LLMs.
