@@ -1,0 +1,6 @@
+__pycache__/
+.idea/
+.venv/
+log/
+realtimesst.log
+HOMEASSISTANT_TOKEN
